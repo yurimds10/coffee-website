@@ -1,0 +1,47 @@
+.menu {
+  &__container {
+
+  }
+
+  &__content {
+
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__card {
+    border: 1px solid var(--main-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background-color: #FFF;
+
+      & h3 {
+        color: #202020;
+      }
+  
+      & .card__price {
+        color: #202020;
+      }
+    }
+
+    & img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    & h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}

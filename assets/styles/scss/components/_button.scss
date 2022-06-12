@@ -1,0 +1,76 @@
+.button {
+  padding: .75rem 1.5rem .75rem 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: .5rem;
+  color: #FFF;
+  cursor: pointer;
+  background-color: var(--main-color);
+  font-weight: 600;
+  transition: .3s;
+
+  &:hover {
+    background-color: var(--background-color);
+    color: var(--main-color);
+
+    & i {
+      transform: translateX(.5rem);
+      
+    }
+  }
+
+  & i {
+    margin-left: .5rem;
+    font-size: .9rem;
+    transition: .3s;
+  }
+}
+
+.button__menu {
+  font-size: 2rem;
+  line-height: 2rem;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
+.button__close {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  transition: .3s;
+  cursor: pointer;
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
+.scroll__button {
+  width: 30px;
+  height: 30px;
+  display: none;
+  background-color: var(--main-color);
+  position: fixed;
+  bottom: 3rem;
+  right: 1.5rem;
+  border-radius: .25rem;
+  transition: .3s;
+
+  & i {
+    font-size: 1rem;
+  }
+}
+
+.show-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

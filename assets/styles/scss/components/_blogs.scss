@@ -1,0 +1,30 @@
+.blogs {
+  margin-bottom: 6rem;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__card {
+    border: 1px solid var(--main-color);
+    border-radius: 1rem;
+    padding:  1rem 1rem 2rem 1rem;
+
+    & img {
+      margin-bottom: 1rem;
+    }
+
+    & .blog__title {
+      margin-bottom: .5rem;
+    }
+
+    & .blog__subtitle {
+      margin-bottom: 1rem;
+      color: var(--main-color);
+      font-size: 1.25rem;
+      display: inline-block;
+    }
+  }
+}

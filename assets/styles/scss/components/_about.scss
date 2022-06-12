@@ -1,0 +1,20 @@
+.about {
+  &__content {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--main-color);
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  &__title {
+    font-size: var(--h3-font-size);
+    margin: 1rem 0 1rem 0;
+  }
+}
